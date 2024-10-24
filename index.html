@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wnioski z prawa przemienności</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 10px;
+        }
+        .indented {
+            text-indent: 20px;
+        }
+        .source {
+            font-size: smaller; /* Mniejsza czcionka dla źródła */
+            margin-top: 20px; /* Odstęp między źródłem a resztą */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Wnioski z prawa przemienności:</h1>
+
+    <ul>
+        <li>pierwsze dwa prawa pozwalają na wprowadzenie krótszego zapisu:</li>
+        <p>– ∃x, y : p(x, y) ≡ ∃x∃y : p(x, y)</p>
+        <p>– ∀x, y : p(x, y) ≡ ∀x∀y : p(x, y)</p>
+    </ul>
+    <ul>
+        <li>trzecie prawo zapisane jest przy pomocy implikacji, co oznacza, że nie wolno nam zamieniać miejscami kwantyfikatora ∀ z kwantyfikatorem ∃, gdy to kwantyfikator ∀ stoi na pierwszym miejscu.</p>
+    </ul>
+
+    <h2>Kontrprzykład (w nawiązaniu do trzeciego prawa):</h2>
+
+    <p>Rozważamy funkcję zdaniową x = y, dla której dziedziną są pary liczb rzeczywistych. Zdanie ∀y ∃x : x = y jest prawdziwe, gdyż dla dowolnej liczby rzeczywistej y możemy wskazać liczbę rzeczywistą x (tj. x := y) spełniającą zadany warunek. Natomiast zdanie ∃x ∀y : x = y jest fałszywe (bo dla każdej liczby rzeczywistej istnieje liczba od niej różna, np. większa o jeden). Zatem nie jest prawdziwa implikacja: (∀y ∃x : x = y) ⇒ (∃x ∀y : x = y).</p>
+
+    <p class="source"> Źródło:<i> "AGH - Wydział Matematyki Stosowanej - Wstęp do Logiki i Teorii Mnogości, dr. Konrad Nosek."</i></p>
+
+</body>
+</html>
